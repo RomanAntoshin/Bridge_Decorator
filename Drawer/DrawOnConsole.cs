@@ -69,11 +69,7 @@ namespace WinFormsApp1
         }
         public void Draw(IMatrix matrix)
         {
-            /*if (matrix.WithBorder == true)
-                DrawCell(matrix.Row, matrix.Column);*/
             DrawCell(matrix.Row, matrix.Column);
-            /*if (matrix.WithBorder == false)
-                box.Clear();*/
             for (int i = 0; i < matrix.Row; i++)
                 for (int j = 0; j < matrix.Column; j++)
                     DrawCellBody(matrix.GetElement(i, j), i, j);
