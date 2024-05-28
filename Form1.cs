@@ -80,7 +80,6 @@ namespace WinFormsApp1
         private void Renume_Click(object sender, EventArgs e)
         {
             Preparation();
-            //RenumberingDecorator decor = new RenumberingDecorator(m);
             decor.RenumRow();
             decor.RenumColumn();
             m.SetDrawer(drawer);
@@ -105,7 +104,6 @@ namespace WinFormsApp1
             {
                 Renume.Enabled = true;
                 Restore.Enabled = true;
-                //decor = new RenumberingDecorator(m);
             }
             drawer = new DrawOnPanel(panel1);
             drawer1 = new DrawOnConsole(richTextBox1, m.Row, m.Column);
