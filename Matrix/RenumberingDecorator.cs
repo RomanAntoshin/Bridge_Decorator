@@ -62,14 +62,6 @@ namespace WinFormsApp1
         }
         public void Draw(int step=0)
         {
-            /*if (this.WithBorder == true)
-                component.DrawBorder(0);
-            for (int i = 0; i < Row; i++)
-                for (int j = 0; j < Column; j++)
-                {
-                    component.DrawElement(this.GetElement(i, j), i, j+step);
-                }
-            */
             component.Drawer.Draw(this);
         }
         public void DrawElement(double data, int i, int j)
